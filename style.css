@@ -1,0 +1,414 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #181719;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header {
+  margin-top: 46px;
+  max-width: 100%;
+  margin-bottom: 147px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 17%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+/* NAVIGATION */
+.logo {
+  display: block;
+  width: 120px;
+  padding-top: 6px;
+  padding-left: 13px;
+  padding-bottom: 6px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.logo-text {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  margin: auto;
+}
+
+.buttons ul {
+  display: flex;
+  gap: 86px;
+}
+
+.buttons ul li a {
+  display: block;
+  margin: 8px 5px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  transition: 0.2s;
+}
+
+.buttons ul li:first-child {
+  padding-left: 0;
+  font-weight: 700;
+  border-bottom: 57px solid #ffffff;
+  border-width: 3px;
+}
+
+.buttons ul li a:active,
+.buttons ul li a:visited {
+  color: #ffffff;
+}
+
+/* HERO */
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 46px;
+
+  max-width: 1280px;
+  margin-bottom: 147px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 86px;
+}
+
+.hero-text {
+  padding-top: 160px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 40px;
+  max-width: 410px;
+}
+
+.hero-topic {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+}
+
+.hero-content {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.hero-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.hero-text a {
+  text-decoration: none;
+}
+
+.hero-text a:active,
+.hero-text a:visited {
+  text-decoration: none;
+  display: inline;
+  color: #ffffff;
+}
+
+.hero-content {
+  position: static;
+}
+
+.hero-photo img {
+  position: static;
+  max-width: 780px;
+}
+
+.profile-photo {
+  position: relative;
+  background-color: #181719;
+  height: 189px;
+  width: 410px;
+  top: -85px;
+  left: 340px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.name-photo {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 18px;
+  max-width: 100%;
+}
+
+.name-photo img {
+  grid-row: 1;
+  grid-column: 1;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-top: 18px;
+  margin-left: 31px;
+}
+
+.personal-info {
+  grid-column: 2 / 4;
+}
+
+.name {
+  margin-top: 23px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 18px;
+  max-width: 100%;
+  margin-bottom: 8px;
+}
+
+.profession {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #828282;
+  max-width: 100%;
+}
+
+.profile-title {
+  grid-row: 2;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  max-width: 287px;
+  margin-left: 31px;
+}
+
+/* FOOTER */
+.footer {
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #bdbdbd;
+  margin-bottom: 24px;
+  margin-top: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 1365px) {
+  .header {
+    padding: 0 15%;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .header {
+    padding: 0 13%;
+  }
+}
+
+@media (max-width: 1165px) {
+  .header {
+    margin-bottom: 0px;
+    padding: 0 5%;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .buttons.active {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 200px;
+    overflow: hidden;
+    background-color: #181719;
+    display: table;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .buttons.active ul {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+  }
+
+  .buttons.active ul li {
+    margin-bottom: 32px;
+  }
+
+  .buttons ul li:first-child {
+    border-bottom: 34px solid #ffffff;
+    border-width: 3px;
+  }
+
+  .close.active {
+    display: block;
+    position: fixed;
+    right: 0;
+    color: #fefefe;
+    z-index: 2;
+    cursor: pointer;
+    padding-right: 15px;
+  }
+
+  .logo {
+    border: 1px solid #ffffff;
+    width: 200px;
+  }
+
+  .logo a {
+    font-family: "Crimson Pro";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .hero {
+    max-width: 90%;
+    margin-bottom: 0px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-topic {
+    font-size: 70px;
+  }
+
+  .hero-text {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 26px;
+    row-gap: 40px;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    max-width: 80%;
+  }
+
+  .hero-photo {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .profile-photo {
+    top: -85px;
+    left: 20%;
+  }
+
+  .hero-text a {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 17px;
+  }
+
+  .hero-photo img {
+    position: static;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 530px) {
+  .profile-photo {
+    height: 138px;
+    width: 300px;
+    top: -85px;
+    left: 15%;
+  }
+
+  .name-photo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .name {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .profession {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .profile-title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
