@@ -271,7 +271,7 @@ body {
   }
 
   .buttons.active {
-    height: 100wh;
+    height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
